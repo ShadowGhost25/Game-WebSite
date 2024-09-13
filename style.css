@@ -62,14 +62,14 @@ header nav ul li:not(.active):not(.btn) a:hover {
     border-bottom: 5px solid #dc7000;
 }
 
-header nav ul li.btn a {
+header nav ul li.btn a, .email .block button {
     background: #FA9021;
     padding: 9px 17px;
     border-radius: 5px;
     transition: all 500ms ease;
 }
 
-header nav ul li.btn a:hover {
+header nav ul li.btn a:hover, .email .block button:hover {
     background-color: #be6a10;
 }
 
@@ -113,7 +113,7 @@ header nav ul li.active::after {
     margin: 30px 0;
 }
 
-.hero--info .btn {
+.hero--info .btn, .hero--about .info .btn  {
     background-color: #fa8305;
     color: #fff;
     border-radius: 50px;
@@ -123,7 +123,7 @@ header nav ul li.active::after {
     font-size: 17px;
 }
 
-.hero--info .btn:hover {
+.hero--info .btn:hover, .hero--about .info .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -145,7 +145,8 @@ header nav ul li.active::after {
     font-size: 31px;
 }
 
-.trending .see-all, .projects .see-all {
+.trending .see-all,
+.projects .see-all {
     color: white;
     background: #25211d;
     border-radius: 5px;
@@ -155,18 +156,21 @@ header nav ul li.active::after {
     transition: all 500ms ease;
 }
 
-.trending .see-all:hover, .projects .see-all:hover {
+.trending .see-all:hover,
+.projects .see-all:hover {
     transform: scale(1.1);
 }
 
-.trending .block img{
+.trending .block img {
     border-radius: 20px;
 
 }
-.trending .block  span img{
+
+.trending .block span img {
     position: relative;
     top: 5px;
 }
+
 .trending .games {
     display: flex;
     justify-content: space-between;
@@ -179,17 +183,20 @@ header nav ul li.active::after {
     text-align: center;
     margin-top: 20px;
 }
-.big-text{
+
+.big-text {
     padding: 50px 0;
     font-size: 35px;
     font-weight: 600;
     text-align: center;
     width: 800px;
 }
+
 .banner {
-    padding: 80px ;
+    padding: 80px;
 }
-.banner h3{
+
+.banner h3 {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -200,19 +207,22 @@ header nav ul li.active::after {
     margin-bottom: 30px;
     width: 550px;
 }
+
 .banner img {
     margin-bottom: 30px;
     width: 100%;
     border-radius: 10px;
 }
+
 /*Секция с изображениями*/
-.features{
+.features {
     background: url('/img/fon.png') no-repeat center center fixed;
     background-size: cover;
     padding: 80px 0px;
 }
 
-.features h3, .features p{
+.features h3,
+.features p {
     padding-bottom: 20px;
     text-align: center;
     max-width: 800px;
@@ -223,44 +233,212 @@ header nav ul li.active::after {
     font-size: 30px;
 }
 
-.features .info{
+.features .info {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.features .info .block{
- text-align: center;
- width: 20%;
- margin: 30px 2%;
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
 }
 
-.features .info .block img{
+.features .info .block img {
     margin-bottom: 15px;
 }
 
-.projects{
+.projects {
     padding: 100px 0px;
 }
-.projects h3{
+
+.projects h3 {
     font-size: 30px;
     text-align: center;
 }
 
-.projects p{
+.projects p {
     margin: 40px 0px;
     text-align: center;
 }
 
-.projects .images{
+.projects .images {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
 
-.projects .see-all{
+.projects .see-all {
     width: 60px;
     float: none;
     margin: 0px auto;
     text-align: center;
+}
+
+/*email*/
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email p {
+    width: 545px;
+}
+
+.email .block {
+    background: #1c140f;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.email .block input {
+    background-color: white;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+    padding: 20px 40px;
+    position: relative;
+    right: -110px;
+    z-index: 1;
+    padding-right: 150px;
+}
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/*footer*/
+footer{
+    background: black;
+    padding: 50px 0px;
+}
+
+footer .logo {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+footer .blocks h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0px;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul{
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.9;
+}
+
+footer hr {
+    margin: 30px 0px;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer > p{
+    text-align: center;
+}
+
+/*Страница о нас */
+.hero--about {
+    position: relative;
+}
+.hero--about img{
+    position: absolute;
+    right: -125px;
+    top: 0;
+}
+.hero--about .info{
+    width: 500px;
+    padding: 250px 0px;
+}
+.hero--about .info h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.hero--about .info .btn{
+ margin-top: 20px;
+}
+.hero--about .info .btn img{
+    margin-left: 15px;
+}
+
+.work{
+    padding: 80px 0px;
+}
+
+.work h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.work .blocks .block{
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1c140f;
+}
+
+.work .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.work .blocks .block .badge{
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+.work .blocks .block .badge.purple{
+    background: rgba(176, 0, 220, 0.11)
+}
+.work .blocks .block .badge.brown{
+    background: rgba(220, 66, 0, 0.11)
+}
+.work .blocks .block .badge.green{
+    background: rgba(0, 220, 141, 0.11)
 }
