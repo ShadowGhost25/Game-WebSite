@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     color: white;
     font-size: 16px;
+    background: black;
 }
 
 a {
@@ -21,8 +22,7 @@ img {
 }
 
 .wrapper {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 000%, rgb(74, 39, 0) 500%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 000%, rgb(74, 39, 0) 300%);
     width: 100%;
 }
 
@@ -441,4 +441,93 @@ footer > p{
 }
 .work .blocks .block .badge.green{
     background: rgba(0, 220, 141, 0.11)
+}
+
+/*contacts*/
+.hero--contacts h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.hero--contacts p{
+    text-align: center;
+}
+.hero--contacts img{
+    width: 70%;
+    margin: 80px 15%
+}
+
+.feedback{
+    padding: 70px 0px;
+    background: #1C140F;
+}
+
+.feedback h2{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.feedback form .inline{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.feedback form .inline>div {
+    width: 290px;
+}
+
+.feedback form label{
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input, .feedback form textarea{
+    background-color: #4F4F4F;
+    border: 0.6px solid #CECECE;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+}
+.feedback form .one-line{
+    width: 100%;
+}
+
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+.feedback form button{
+    background: #dc7000;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: white;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+}
+
+.feedback form button:hover{
+    background-color: rgb(233, 73, 73);
 }
